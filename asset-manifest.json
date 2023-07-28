@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/nohekhone/static/css/main.7af9b44c.css",
-    "main.js": "/nohekhone/static/js/main.1f03cad6.js",
-    "static/js/787.28cb0dcd.chunk.js": "/nohekhone/static/js/787.28cb0dcd.chunk.js",
+    "main.js": "/nohekhone/static/js/main.ec5c5cb9.js",
     "static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2": "/nohekhone/static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.7e0701f81878e032a085.woff2",
     "static/media/Roboto-Regular.ttf": "/nohekhone/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/OpenSans-Medium.ttf": "/nohekhone/static/media/OpenSans-Medium.5b0a682fe3717764627e.ttf",
     "static/media/OpenSans-Bold.ttf": "/nohekhone/static/media/OpenSans-Bold.45847e90261782dc01a6.ttf",
     "static/media/OpenSans-Regular.ttf": "/nohekhone/static/media/OpenSans-Regular.9a6cfa5890d7f3eef585.ttf",
+    "service-worker.js": "/nohekhone/service-worker.js",
     "static/media/Vazirmatn-Regular.woff2": "/nohekhone/static/media/Vazirmatn-Regular.58c84f666915410c0ba8.woff2",
     "index.html": "/nohekhone/index.html",
     "main.7af9b44c.css.map": "/nohekhone/static/css/main.7af9b44c.css.map",
-    "main.1f03cad6.js.map": "/nohekhone/static/js/main.1f03cad6.js.map",
-    "787.28cb0dcd.chunk.js.map": "/nohekhone/static/js/787.28cb0dcd.chunk.js.map"
+    "main.ec5c5cb9.js.map": "/nohekhone/static/js/main.ec5c5cb9.js.map"
   },
   "entrypoints": [
     "static/css/main.7af9b44c.css",
-    "static/js/main.1f03cad6.js"
+    "static/js/main.ec5c5cb9.js"
   ]
 }
