@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nohekhone/static/css/main.7af9b44c.css",
-    "main.js": "/nohekhone/static/js/main.293b759a.js",
+    "main.js": "/nohekhone/static/js/main.6d59bdf6.js",
     "static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2": "/nohekhone/static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.7e0701f81878e032a085.woff2",
     "static/media/Roboto-Regular.ttf": "/nohekhone/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/OpenSans-Medium.ttf": "/nohekhone/static/media/OpenSans-Medium.5b0a682fe3717764627e.ttf",
@@ -11,10 +11,10 @@
     "static/media/Vazirmatn-Regular.woff2": "/nohekhone/static/media/Vazirmatn-Regular.58c84f666915410c0ba8.woff2",
     "index.html": "/nohekhone/index.html",
     "main.7af9b44c.css.map": "/nohekhone/static/css/main.7af9b44c.css.map",
-    "main.293b759a.js.map": "/nohekhone/static/js/main.293b759a.js.map"
+    "main.6d59bdf6.js.map": "/nohekhone/static/js/main.6d59bdf6.js.map"
   },
   "entrypoints": [
     "static/css/main.7af9b44c.css",
-    "static/js/main.293b759a.js"
+    "static/js/main.6d59bdf6.js"
   ]
 }
