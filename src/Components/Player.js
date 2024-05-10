@@ -23,6 +23,15 @@ export default function Player() {
     }
 
     useEffect(() => {
+        let volume = localStorage.getItem('player_volume')
+        player.current.volume = volume ? volume : 1;
+    }, [])
+
+    useEffect(() => {
+        if (Context.activeNohe.currentTime) {
+            console.log('acafsfda')
+            player.current.currentTime = Context.activeNohe.currentTime
+        }
         setTimeout(() => {
             if (Context.playlist.indexOf(Context.activeNohe) === 0) {
                 prevButton.current.classList.add('disabled')
@@ -39,6 +48,12 @@ export default function Player() {
     }, [Context.activeNohe])
 
     const onTimeUpdate = () => {
+        if (Context.activePage === 'Home') {
+            console.log('apadate')
+            let a = Context.homeActiveNohe;
+            a.currentTime = player.current.currentTime
+            Context.setHomeActiveNohe(a)
+        }
         document.querySelector('.Player .time-control .current-time').innerHTML = secondsToTime(player.current.currentTime);
         document.querySelector('.Player .time-control .duration').innerHTML = secondsToTime(player.current.duration);
         document.querySelector('.seekbar').value = player.current.currentTime;
@@ -71,7 +86,7 @@ export default function Player() {
             <div></div>
         </div>
         <div className="content">
-            <div className="image"><img src={'http://localhost/nohekhone/src/assets/images/Noheha/' + Context.activeNohe.image} /></div>
+            <div className="image"><img src={Context.activeNohe.image} /></div>
             <div className="title">{Context.activeNohe.title}</div>
             <div className="subtitle Madah">{Context.activeNohe.madah.name}</div>
         </div>
@@ -97,7 +112,13 @@ export default function Player() {
                     document.querySelector('.volume-control').style.display = 'none'
                 }, 300);
             }}>
-                <span className="icon">volume_up</span><input class="seekbar" type="range" min="0" max="100" onInput={(e) => { player.current.volume = e.target.value / 100; document.querySelector('.volume-control .seekbar').style.backgroundSize = e.target.value + '% 100%' }} />
+                <span className="icon">volume_up</span>
+                <input class="seekbar" type="range" min="0" max="100" onInput={(e) => {
+                    player.current.volume = e.target.value / 100;
+                    localStorage.setItem('player_volume', e.target.value / 100)
+                    document.querySelector('.volume-control .seekbar').style.
+                        backgroundSize = e.target.value + '% 100%'
+                }} />
             </div>
         </div>
     </div>

@@ -6,6 +6,14 @@ export default function Topbar() {
 
     useEffect(() => {
         document.body.classList.add('Dark')
+
+        document.querySelector('.Topbar .menu.icon').onclick = () => {
+          document.querySelector('.Drawer').classList.add('active')
+          document.querySelector('.modal-back').style.display = 'block';
+          setTimeout(() => {
+            document.querySelector('.modal-back').classList.remove('hidden')
+          }, 40)
+        }
     }, [])
 
     useEffect(() => {
