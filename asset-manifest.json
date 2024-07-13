@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.07f7d7df.css",
-    "main.js": "/static/js/main.1a5da6c7.js",
+    "main.css": "/static/css/main.6708bc3b.css",
+    "main.js": "/static/js/main.45a3df17.js",
     "static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2": "/static/media/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.7e0701f81878e032a085.woff2",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/OpenSans-Medium.ttf": "/static/media/OpenSans-Medium.5b0a682fe3717764627e.ttf",
@@ -10,11 +10,11 @@
     "static/media/Vazirmatn-Regular.woff2": "/static/media/Vazirmatn-Regular.58c84f666915410c0ba8.woff2",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
-    "main.07f7d7df.css.map": "/static/css/main.07f7d7df.css.map",
-    "main.1a5da6c7.js.map": "/static/js/main.1a5da6c7.js.map"
+    "main.6708bc3b.css.map": "/static/css/main.6708bc3b.css.map",
+    "main.45a3df17.js.map": "/static/js/main.45a3df17.js.map"
   },
   "entrypoints": [
-    "static/css/main.07f7d7df.css",
-    "static/js/main.1a5da6c7.js"
+    "static/css/main.6708bc3b.css",
+    "static/js/main.45a3df17.js"
   ]
 }
