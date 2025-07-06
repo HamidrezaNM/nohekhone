@@ -18,6 +18,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Create .env
+      run: |
+
     - id: build-publish
       uses: bitovi/github-actions-react-to-github-pages@v1.2.4
       with:
