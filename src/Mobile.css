@@ -12,6 +12,14 @@
     padding: 0px;
   }
 
+  .Columns .Secondary {
+    display: none;
+  }
+
+  .Columns .Secondary.focused {
+    display: flex;
+  }
+
   .form {
     flex-direction: column;
   }
@@ -20,4 +28,43 @@
     flex-basis: auto;
   }
 
+  .Columns .Secondary {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    padding-top: 54px;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--secondary);
+    transition: all .3s ease;
+  }
+
+  .Secondary.animate {
+    max-height: 80px;
+  }
+
+  .Secondary .Player .time-control,
+  .Secondary .Player .controls,
+  .Secondary .Player .content .title,
+  .Secondary .Player .content .subtitle {
+    transition: all .3s ease;
+  }
+
+  .Secondary.animate .Player .time-control,
+  .Secondary.animate .Player .controls,
+  .Secondary.animate .Player .content .title,
+  .Secondary.animate .Player .content .subtitle {
+    opacity: 0;
+    transition: none;
+  }
+
+  .Secondary.animate .Player .backdrop-image,
+  .Secondary.animate .Player .content .image {
+    opacity: 1;
+  }
+
+  .content.image-placeholder {
+    padding-top: 260px;
+  }
 }

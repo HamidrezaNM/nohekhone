@@ -23,6 +23,18 @@
   src: url("./assets/fonts/Vazirmatn/Vazirmatn-Regular.woff2");
 }
 
+@font-face {
+  font-family: "Vazirmatn";
+  font-weight: 500;
+  src: url("./assets/fonts/Vazirmatn/Vazirmatn-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  font-weight: bold;
+  src: url("./assets/fonts/Vazirmatn/Vazirmatn-Bold.woff2");
+}
+
 * {
   box-sizing: border-box;
 }

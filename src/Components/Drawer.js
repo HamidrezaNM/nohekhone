@@ -1,20 +1,16 @@
 import { useContext, useRef, useEffect } from "react"
 import { Ctx } from "../App"
+import packageInfo from '../../package.json';
+import buildClassName, { toFarsiNumber } from "../util";
+import Transition from "./Transition";
 
 export default function Drawer() {
   const Context = useContext(Ctx)
-  
+
   const drawer = useRef();
   const modal = useRef();
 
   useEffect(() => {
-    modal.current.onclick = () => {
-      drawer.current.classList.remove('active')
-      modal.current.classList.add('hidden')
-      setTimeout(() => {
-        modal.current.style.display = 'none'
-      }, 300)
-    }
     drawer.current.querySelectorAll('.Item').forEach((item) => {
       console.log(item)
       item.onclick = () => {
@@ -23,25 +19,27 @@ export default function Drawer() {
         })
         item.classList.add('active')
         Context.setActivePage(item.getAttribute('page'))
-        modal.current.click()
+        Context.setShowDrawer(false)
       }
     })
   }, [])
-  
+
   return (
     <>
-    <div className="Drawer" ref={drawer}>
-      <div>
-        <div className="Item active" page="Home"><span className="icon">home</span><span className="title">خانه</span></div>
-        <div className="Item" page="Add"><span className="icon" >add</span><span className="title">افزودن نوحه</span></div>
-      </div>
-      <div>
-        <div className="version">
-          <span className="title">نوحه خونه وب - نسخه 0.9.0</span>
+      <div className={buildClassName("Drawer", Context.showDrawer && 'active')} ref={drawer}>
+        <div>
+          <div className="Item active" page="Home"><span className="icon">home</span><span className="title">خانه</span></div>
+          <div className="Item" page="Add"><span className="icon" >add</span><span className="title">افزودن نوحه</span></div>
+        </div>
+        <div>
+          <div className="version">
+            <span className="title">نوحه خونه وب - نسخه {toFarsiNumber(packageInfo.version)}</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="modal-back hidden" ref={modal}></div>
+      <Transition state={Context.showDrawer}>
+        <div className="modal-back" onClick={() => Context.setShowDrawer(false)} ref={modal}></div>
+      </Transition>
     </>
   )
 }
